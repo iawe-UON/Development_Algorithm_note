@@ -33,11 +33,11 @@ line-height：设置行高
 
 内容部分(content)、内边距部分(padding)、边框部分(border)、外边距部分(margin)
 
-![1](1.png)
+![1](picture/1.png)
 
-![2](2.png)
+![2](picture/2.png)
 
-![3](3.png)
+![3](picture/3.png)
 
 [CSS官网文档](https://www.w3school.com.cn/)
 
@@ -56,4 +56,4 @@ line-height：设置行高
 表头单元格
 <th>
 ```
-![4](4.png)
+![4](picture/4.png)
