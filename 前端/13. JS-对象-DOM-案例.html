@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-对象-DOM-案例</title>
+</head>
+
+<body>
+    <!-- <img id="h1" src="img/off.gif">  <br><br>
+
+    <div class="cls">传智教育</div>   <br>
+    <div class="cls">黑马程序员</div>  <br>
+
+    <input type="checkbox" name="hobby"> 电影
+    <input type="checkbox" name="hobby"> 旅游
+    <input type="checkbox" name="hobby"> 游戏 -->
+    <img id="h1" src="img/off.gif"><br>
+    <input type="button" onclick="light()" value="点亮"> 
+    <input type="button" onclick="dark()" value="熄灭"> 
+    <br>
+    <input type="text" id="tt" value="TEST" onfocus="lower()" onblur="upper()"> 
+    <!-- <input type="text" id="name" value="ITCAST" onfocus="lower()" onblur="upper()"> -->
+    <br>
+
+    <div class="cls">传智教育</div><br>
+    <div class="cls">黑马程序员</div><br>
+    <input type="checkbox" name="hobby"> 电影
+    <input type="checkbox" name="hobby"> 游戏
+    <input type="checkbox" name="hobby"> 旅游
+    <br>
+    <input type="button" onclick="A()" value="全选"> 
+    <input type="button" onclick="no()" value="反选"> 
+</body>
+<!-- 注意隐藏关键词 -->
+<script>
+    // 1.点亮熄灭功能：
+    function light(){
+        let imgs = document.getElementById('h1');
+        imgs.src = "img/on.gif";
+    }
+    function dark(){
+        let imgs = document.getElementById('h1');
+        imgs.src = "img/off.gif";
+    }
+    //2.聚焦失焦
+    function lower(){
+        let TXT = document.getElementById('tt');
+        TXT.value = TXT.value.toLowerCase();
+    }
+    function upper(){
+        let input = document.getElementById("tt");
+        input.value = input.value.toUpperCase();
+    }
+    //3.全选取消全选
+    function A(){
+        let hobbys = document.getElementsByName('hobby');
+        for(let i=0;i<hobbys.length;i++){
+            hobbys[i].checked = true;
+        }
+
+    }
+    function no(){
+        let hobbys = document.getElementsByName('hobby');
+        for(let i=0;i<hobbys.length;i++){
+            hobbys[i].checked = false;
+        }
+
+    }
+
+
+
+</script>
+</html>
